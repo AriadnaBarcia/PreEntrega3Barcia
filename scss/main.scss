@@ -1,3 +1,6 @@
+@import "colores";
+$blanco: #fff;
+
 * {
     padding: 0%;
     margin: 0%;
@@ -5,9 +8,7 @@
 }
 
 body {
-    //background-color: #060d2a;
-    //background: linear-gradient(#060d2a, #1b9ec5);
-    background: linear-gradient(#060d2a, #1b9ec5, #060d2a, #1b9ec5);
+    background: $fondo;
     color: white;
 }
 
@@ -21,16 +22,16 @@ body {
 }
 
 .btn-menu {
-    color: #FFF;
+    color: $blanco;
     font-size: 25px;
 }
 
 .navbar-toggler:focus {
-    box-shadow: none
+    box-shadow: none;
 }
 
 .nav-link {
-    color: #FFF;
+    color: $blanco;
 }
 
 .collapse {
@@ -55,12 +56,12 @@ nav {
     -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #05091a;
-    color: #fff;
+    color: $blanco;
     padding: 10px;
 }
 
 .navbar {
-    color: #fff;
+    color: $blanco;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -84,7 +85,7 @@ nav li {
 }
 
 nav a {
-    color: #fff;
+    color: $blanco;
     text-decoration: none;
     font-size: 18px;
 }
@@ -142,7 +143,7 @@ nav a {
     /*background: #0c0c0c;*/
     background: #05091a;
     padding: 0 0 30px 0;
-    color: #fff;
+    color: $blanco;
     font-size: 14px;
 }
 
@@ -154,7 +155,7 @@ nav a {
     margin-bottom: 15px;
     /* background: #191919;*/
     background: rgba(8, 14, 40, 0.95);
-    color: #fff;
+    color: $blanco;
     /*border-top: 4px solid #cc1616;*/
     border-top: 4px solid #006bff;
     text-align: center;
@@ -180,7 +181,7 @@ nav a {
     font-size: 18px;
     display: inline-block;
     background: #262626;
-    color: #fff;
+    color: $blanco;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -195,14 +196,14 @@ nav a {
 #footer .footer-top .social-links a:hover {
     /* background: #cc1616;*/
     background: #4073ba;
-    color: #fff;
+    color: $blanco;
     text-decoration: none;
 }
 
 #footer .footer-top h4 {
     font-size: 16px;
     font-weight: 600;
-    color: #fff;
+    color: $blanco;
     position: relative;
     padding-bottom: 12px;
 }
@@ -240,7 +241,7 @@ nav a {
 }
 
 #footer .footer-top .footer-links ul a {
-    color: #fff;
+    color: $blanco;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     display: inline-block;
@@ -254,19 +255,19 @@ nav a {
 
 #footer .footer-top .footer-newsletter form {
     margin-top: 30px;
-    background: #fff;
+    background: $blanco;
     padding: 6px 10px;
     position: relative;
     border-radius: 4;
 }
 
-#footer .footer-top .footer-newsletter form input[type=email] {
+#footer .footer-top .footer-newsletter form input[type="email"] {
     border: 0;
     padding: 4px;
     width: calc(100% - 110px);
 }
 
-#footer .footer-top .footer-newsletter form input[type=submit] {
+#footer .footer-top .footer-newsletter form input[type="submit"] {
     position: absolute;
     top: 0;
     right: 0;
@@ -276,13 +277,13 @@ nav a {
     font-size: 16px;
     padding: 0 20px;
     background: #cc1616;
-    color: #fff;
+    color: $blanco;
     -webkit-transition: 0.3s;
     transition: 0.3s;
     border-radius: 4;
 }
 
-#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+#footer .footer-top .footer-newsletter form input[type="submit"]:hover {
     background: #e82d2d;
 }
 
@@ -296,7 +297,7 @@ nav a {
     padding-top: 5px;
     text-align: center;
     font-size: 13px;
-    color: #fff;
+    color: $blanco;
 }
 
 #footer .credits a {
@@ -305,14 +306,14 @@ nav a {
 }
 
 .header {
-    color: #36A0FF;
+    color: #36a0ff;
     font-size: 27px;
     padding: 10px;
 }
 
 .bigicon {
     font-size: 35px;
-    color: #36A0FF;
+    color: #36a0ff;
 }
 
 .form-group {
@@ -322,7 +323,7 @@ nav a {
 
 .button-enviar {
     background-color: white;
-    color: #36A0FF;
+    color: #36a0ff;
     font-weight: bold;
     margin: 0;
     padding-bottom: 5px;
@@ -332,8 +333,9 @@ nav a {
 
 .button-enviar:hover {
     color: white;
-    background-color: #36A0FF;
+    background-color: #36a0ff;
 }
+
 .div-noticias {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -342,8 +344,8 @@ nav a {
 }
 
 .sec-padding {
-padding-left: 25px;
-padding-right: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 .img-noticia {
@@ -363,22 +365,39 @@ padding-right: 25px;
 
 @media only screen and (max-width: 600px) {
     .div-noticias {
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .div-noticias {
-        grid-template-columns: 1fr ;
-}
+        grid-template-columns: 1fr;
+    }
 }
 
 @media only screen and (max-width: 992px) {
     .div-noticias {
-        grid-template-columns: 1fr ;
-}
+        grid-template-columns: 1fr;
+    }
 }
 
 img {
     width: 100%;
 }
+
+
+.animacion-escritura {
+    overflow: hidden; /* Oculta el exceso de texto que aún no se ha escrito */
+    animation: escribir 2s steps(40) forwards; /* Duración de la animación y número de pasos */
+  }
+  
+  @keyframes escribir {
+    0% {
+      width: 50%; /* Inicia con una anchura de 0 */
+    }
+    100% {
+      width: 100%; /* Llega a la anchura completa del texto */
+      border-right:0px;
+    }
+  }
+  
