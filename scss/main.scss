@@ -92,14 +92,14 @@ nav a {
 
 .logo {
         position: absolute; /* Ajusta la posición del logo */
-        top: 10px;
-        left: 10px;
+        top: 1px;
+        left: 1px;
     
       @media (max-width: 375px) {
         /* Estilos específicos para dispositivos móviles */
           position: relative; /* Cambia la posición a relativa para fluir con el contenido */
-          top: 0;
-          left: 0;
+          top: 1px;
+          left: 1px;
           margin-bottom: 10px; /* Agrega un margen inferior para separarlo de otros elementos */
         
       }
